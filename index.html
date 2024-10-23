@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cycling Gallery App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cycling Activities Gallery</h1>
+
+      <!-- Form to add new activity -->
+      <form id="activity-form">
+        <label for="image-input">Upload Photo:</label>
+        <input type="file" id="image-input" accept="image/*" required /><br />
+
+        <label for="distance">Distance (km):</label>
+        <input
+          type="number"
+          id="distance"
+          placeholder="Distance"
+          required /><br />
+
+        <label for="elevation">Elevation Gain (m):</label>
+        <input
+          type="number"
+          id="elevation"
+          placeholder="Elevation Gain"
+          required /><br />
+
+        <button type="submit">Add Activity</button>
+      </form>
+
+      <!-- Gallery to display cycling activities -->
+      <div id="gallery"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
